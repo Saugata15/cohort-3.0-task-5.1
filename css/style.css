@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(130deg, #140c13 0%, #25103a 55%, #190b14 100%);
+}
