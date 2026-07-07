@@ -1,3 +1,9 @@
+:root {
+  --white: #fff;
+  --text:#f5eef2;
+  --pink:#ff2d6f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,5 +14,55 @@ html,
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(130deg, #140c13 0%, #25103a 55%, #190b14 100%);
+  background: radial-gradient(ellipse at 75% 30%, #4a1638 0%, #1a0a1f 55%, #0d0510 100%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header {
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 110px;
+  height: 60px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+ul.nav-links {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+ul.nav-links li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    opacity: .6;
+    font-size: 15px;
+}
+
+header i {
+    color: var(--text);
+    font-size: 24px;
+}
+
+ul.nav-links li.active a {
+    color: var(--text);
+    border-bottom: 2px solid var(--pink);
+    padding-bottom: 6px;
+    opacity: 1;
 }
